@@ -7,4 +7,5 @@ from page import create_page
 #  whenever a commit is made
 ###
 
-create_page("index.html", "")
+create_page("index.html", "<p>about page</p>")
+create_page("essays/index.html", "<p>essays page</p>")
