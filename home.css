@@ -28,7 +28,7 @@ h2 {
     margin-bottom: 0;
 }
 .labels {
-    display: inline;
+    display: inline-block;
     background-color: #555;
     color: #aaa;
     border-radius: 4px;
@@ -37,7 +37,6 @@ h2 {
     margin-right: 1px;
     padding-left: 2px;
     padding-right: 2px;
-    overflow-wrap: break-word;
 }
 .link {
     display: block;

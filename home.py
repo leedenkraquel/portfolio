@@ -4,7 +4,8 @@ from parse_md import parse_md
 ###
 # Name: page.py
 # Auhtor(s): Leeden Raquel
-# Description: generates a string that represents the html for the home page
+# Description: generates a string that represents the html for the home page. The home page should
+#  display a header with my name followed by a preview of my projects and essays
 ###
 
 def create_home_page ():
