@@ -1,0 +1,140 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    min-width: 350px;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#body_style {
+    background-color: #eaf8ff;
+    height: 100%;
+}
+#nav_bar {
+    color: #ffffff;
+    background-color: #232323 !important;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: end;
+    transition: 0.5s;
+}
+#nav_obj {
+    float: right;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: auto;
+    margin-right: 35px;
+    padding: 5px;
+}
+#nav_obj:hover {
+    color: #cccccc;
+}
+#nav_obj_mobile {
+    font-size: 20px;
+    color: #ffffff;
+    width: 0;
+    margin-left: 95%;
+    margin-right: 50px;
+    margin-top: auto;
+}
+@media screen and (max-width: 700px) {
+    #nav_obj {
+        display: none;
+    }
+    #nav_obj_mobile {
+         display: block;
+    }
+}
+@media screen and (min-width: 700px) {
+    #nav_obj {
+        display: block;
+    }
+    #nav_obj_mobile {
+        display: none;
+    }
+}
+#logo {
+    font-size: 20px;
+    font-weight: bold;
+    max-height: 100%;
+    float: left;
+    padding-left: 50px;
+    margin-top: auto;
+}
+#side_nav {
+    color: #ffffff;
+    background-color: #232323;
+    height: 100%;
+    padding-top: 75px;
+    width: 0px;
+    height: 100%;
+    right: 0px;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 2;
+}
+#side_nav_obj {
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+#site_body {
+    background-color: #eaf8ff;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 500px;
+}
+#about_body {
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 25px;
+}
+#footer {
+    background-color: #232323;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#footer_col {
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#sitemap {
+    padding-left: 30%;
+    padding-right: -30%;
+    text-align: start;
+    display: block;
+}
+#social {
+    font-size: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.invert {
+    filter: invert(100%);
+}
+#vert_rule {
+    height: 70px;
+    border-left: 1px solid #555555;
+    float: left;
+}
