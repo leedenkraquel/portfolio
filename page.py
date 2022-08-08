@@ -61,6 +61,7 @@ def write_footer (page):
     return page
 
 def create_page (directory, body, stylesheets = []):
+    global subdirectory
     subdirectory = "../" * directory.count("/")
     page_html = open(directory, "w")
     page_html.write('<!-- THIS FILE IS PROGRAMATICALLY GENERATED, CHANGES TO THIS .html FILE WILL NOT SAVE-->')
