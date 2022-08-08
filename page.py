@@ -30,7 +30,7 @@ def write_navbar (page):
             <a class="navbar_obj" href="/">Home</a>
             <a class="navbar_obj" href="/projects/">Projects</a>
             <a class="navbar_obj" href="/essays/">Essays</a>
-            <a class="navbar_obj" href="/resume/">Resume</a>
+            <a class="navbar_obj" href="/about/">About Me</a>
         </div>
     ''')
     return page
@@ -48,10 +48,11 @@ def write_footer (page):
                 <a class="sitemap_obj" href="/">Home</a>
                 <a class="sitemap_obj" href="/projects/">Projects</a>
                 <a class="sitemap_obj" href="/essays/">Essays</a>
-                <a class="sitemap_obj" href="/resume/">Resume</a>
+                <a class="sitemap_obj" href="/about/">About Me</a>
             </div>
             <div class="footer_col">
-                <p>icons</p>
+                <a href="https://github.com/leedenkraquel"><img class="inverted footer_icon" src="''' + subdirectory + '''images/github.png" alt="github logo" /></a>
+                <a href="https://www.linkedin.com/in/leeden-raquel-398309183/"><img class="inverted footer_icon" src="''' + subdirectory + '''images/linkedin.png" alt="linkedin logo" /></a>
             </div>
             <div class="footer_col">
                 <p>Quote</p>
@@ -66,8 +67,8 @@ def create_page (directory, body, stylesheets = []):
     page_html = open(directory, "w")
     page_html.write('<!-- THIS FILE IS PROGRAMATICALLY GENERATED, CHANGES TO THIS .html FILE WILL NOT SAVE-->')
     page_html = write_header(page_html, stylesheets)
-    page_html.write('<body>')
+    page_html.write('<body><div class="background_image">')
     page_html = write_navbar(page_html)
     page_html = write_body(page_html, body)
     page_html = write_footer(page_html)
-    page_html.write('</body>')
+    page_html.write('</div></body>')
