@@ -62,10 +62,11 @@ class Markdown():
 #  Markdown - an object that has the headers and content as props
 ###
 def parse_md(filedir):
-        md_file = open(filedir, "r")
-        content = md_file.readlines()
+	md_file = open(filedir, "r")
+	content = md_file.readlines()
 	output = Markdown()
-        header_indexes = [i for i in range(len(content)) if "---" in content[i]]
+	header_indexes = [i for i in range(len(content)) if "---" in content[i]]
+	
 	for line in content[header_indexes[0]+1:header_indexes[1]]:
 		if "layout" in line:
 			output.layout = line.split(":")[1][1:-1]
@@ -83,14 +84,17 @@ def parse_md(filedir):
 			output.summary = line.split(":")[1][1:-1]
 		elif " - " in line:
 			output.labels.append(line.split("-")[1][1:-1])
+	
 	for line in content[header_indexes[1]+1:]:
 		if "[" in line:
 			anchor_start_indexes = [i for i in range(len(line)) if line[i] == "["]
 			anchor_end_indexes = [i for i in range(len(line)) if line[i] == "]"]
 			anchor_indexes = [list(a) for a in zip(anchor_start_indexes, anchor_end_indexes)]
+			
 			for i in range(len(anchor_indexes) -1, -1, -1):
 				ref_index = [anchor_indexes[i][1]+1, line.index(")", anchor_indexes[i][1]+1)]
 				line = line[:anchor_indexes[i][0]] + "<a class='project_link' href='" + line[ref_index[0]+1:ref_index[1]] + "'>" + line[anchor_indexes[i][0]+1:anchor_indexes[i][1]] + "</a>" + line[ref_index[1]+1:]
+		
 		if line[0] == "<":
 			output.content += line
 		elif line[0] == ">":
@@ -107,4 +111,5 @@ def parse_md(filedir):
 			output.content += "<br />"
 		else:
 			output.content += "<p>" + line + "</p>"
+	
 	return output
