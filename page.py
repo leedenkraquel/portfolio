@@ -6,7 +6,7 @@
 ###
 
 def write_header (page, directory, stylesheets):
-    subdirectory = directory[:1 + directory.rfind("/")]
+    subdirectory = "../" * directory.count("/")
     page.write('''
         <head>
             <title>Leeden R | Portfolio</title>
