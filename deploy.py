@@ -12,5 +12,6 @@ from about.about import create_about_me_page
 ###
 
 create_page("index.html", create_home_page(), ["home.css"])
-create_page("essays/index.html", "<p>essays page</p>")
+create_page("projects/index.html", '<p>projects page</p>')
+create_page("essays/index.html", '<p>essays page</p>')
 create_page("about/index.html", create_about_me_page(), ["about.css"])
