@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/FRCLogo.png
+image: images/frc-logo.png
 title: First Robotics Competition
 permalink: projects/First Robotics Competition
 date: 2017-01

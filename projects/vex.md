@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/VexLogo.png
+image: images/vex-logo.png
 title: Vex Robotics Competition
 permalink: projects/Vex Robotics Competition
 date: 2017-09
