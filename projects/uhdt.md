@@ -4,7 +4,7 @@ type: project
 image: images/DroneTechnologiesLogo.png
 title: University of Hawaii Drone Technologies
 permalink: projects/University of Hawaii Drone Technologies
-date: 2018-05-01
+date: 2018-05
 labels:
   - Robotics
   - Python

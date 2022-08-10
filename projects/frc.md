@@ -4,7 +4,7 @@ type: project
 image: images/FRCLogo.png
 title: First Robotics Competition
 permalink: projects/First Robotics Competition
-date: 2017-01-01
+date: 2017-01
 labels:
   - Robotics
   - C++

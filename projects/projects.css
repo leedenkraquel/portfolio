@@ -1,13 +1,12 @@
 .title {
     color: #fff;
-    font-size: 20px;
+    font-size: 20;
     font-weight: bold;
     text-align: start;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1em;
 }
-
 .date {
     color: #ccc;
     font-weight: 800;
@@ -15,81 +14,67 @@
     margin-top: 1px;
     margin-left: 20px;
 }
-
 .cover_image {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 300px;
     z-index: 1;
 }
-
 .summary {
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     opacity: 0%;
-    background: #333;
-    transition: 0.2s;
+    transition: 0.5s;
+    z-index: 2;
 }
-
-.summary:hover{
+.summary:hover {
     opacity: 100%;
 }
-
-.project_body {
+.project_page {
     display: grid;
     justify-items: center;
-    row-gap: 20px;
-    padding-bottom: 20px;
+    row-gap: 1em;
+    padding-bottom: 1em;
     grid-template-columns: auto auto auto auto;  
 }
 @media screen and (max-width: 1200px) {
-    .project_body {
+    .project_page {
         grid-template-columns: auto auto auto;
     }
 }
-
 @media screen and (max-width: 900px) {
-    .project_body {
+    .project_page {
         grid-template-columns: auto auto;
     }
 }
-
 @media screen and (max-width: 600px) {
-    .project_body {
+    .project_page {
         grid-template-columns: auto;
     }
 }
-
-.project_card_outer {
+.project_card {
     background-color: #333;
-    width: 300px;
-}
-
-.project_card_inner {
-    padding-top: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     height: 380px;
     width: 300px;
     position: relative;
 }
-
-.project_card_outer:hover {
+.project_card:hover {
     transform: translate(2px, -2px);
     box-shadow: -2px 2px 10px #222
 }
-
-.project_body {
-    background-color: #eaf8ff;
-    color: #000;
-}
-
 .project_link {
-    color: #00f !important;
+    text-decoration: none;
 }

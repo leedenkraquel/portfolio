@@ -4,7 +4,7 @@ import json
 # Name: about.py
 # Auhtor(s): Leeden Raquel
 # Description: generates a string that represents the html for the about me page. The about me page
-#  should show a resume about me, my skills, experience, and 
+#  should show a resume about me, skills, experience, and awards
 ###
 
 def create_about_me_page ():
@@ -39,7 +39,7 @@ def create_about_me_page ():
 
     return about_page
 
-def get_experience(directory):
+def get_experience (directory):
     experience_file = open(directory, "r")
     experience_json = json.load(experience_file)
     experience_output = '<div class="experience section">'
@@ -56,7 +56,7 @@ def get_experience(directory):
     experience_output += '</div>'
     return experience_output
 
-def get_skills(directory):
+def get_skills (directory):
     skills_file = open(directory, "r")
     skills_json = json.load(skills_file)
     skills_output = '<div class="skills section">'
@@ -72,7 +72,7 @@ def get_skills(directory):
     skills_output += '</div>'
     return skills_output
 
-def get_education(directory):
+def get_education (directory):
     edu_file = open(directory, "r")
     edu_json = json.load(edu_file)
     edu_output = '<div class="education section">'
@@ -89,7 +89,7 @@ def get_education(directory):
     edu_output += '</div>'
     return edu_output
 
-def get_volunteer(directory): 
+def get_volunteer (directory): 
     vol_file = open(directory, "r")
     vol_json = json.load(vol_file)
     vol_output = '<div class="volunteering section">'
@@ -107,7 +107,7 @@ def get_volunteer(directory):
     vol_output += '</div>'
     return vol_output
 
-def get_awards(directory): 
+def get_awards (directory): 
     award_file = open(directory, "r")
     award_json = json.load(award_file)
     award_output = '<div class="awards section">'

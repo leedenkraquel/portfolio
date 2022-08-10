@@ -4,7 +4,7 @@ type: project
 image: images/uhm-gitclubs-logo-final.jpg
 title: UHM Git Clubs
 permalink: projects/UHM Git Clubs
-date: 2021-05-10
+date: 2021-05
 labels:
   - Javascript
   - Meteor

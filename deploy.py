@@ -1,9 +1,10 @@
 from about.about import create_about_me_page
 from home import create_home_page
-import sys
 from page import create_page
 from home import create_home_page
 from about.about import create_about_me_page
+from projects.projects import create_projects_page
+
 ###
 # Name: deploy.py
 # Author(s): Leeden Raquel
@@ -11,7 +12,7 @@ from about.about import create_about_me_page
 #  whenever a commit is made
 ###
 
-create_page("index.html", create_home_page(), ["home.css"])
-create_page("projects/index.html", '<p>projects page</p>')
+create_page("index.html", create_home_page(), ["home.css", "projects/projects.css"])
+create_page("projects/index.html", create_projects_page("projects/"), ["projects.css"])
 create_page("essays/index.html", '<p>essays page</p>')
 create_page("about/index.html", create_about_me_page(), ["about.css"])
