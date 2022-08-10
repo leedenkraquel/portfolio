@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       CI_COMMIT_AUTHOR: Continuous Integration
-      CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
+      CI_COMMIT_MESSAGE: Continuous Integration Build to Pages
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -39,7 +39,14 @@ jobs:
     - name: Create Web Pages
       run: | 
         python deploy.py
-    - name: GIT commit Build Artifacts
+    - name: GIT commit Build to Main
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "leedenkraquel@users.noreply.github.com"
+        git pull
+        git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push
+    - name: GIT commit Build to Pages
       run: |
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         git config --global user.email "leedenkraquel@users.noreply.github.com"
