@@ -13,6 +13,8 @@ h1 {
 }
 .background_image {
     background-image: linear-gradient(120deg, #a0ddfc, #fff);
+    height: 100%;
+    overflow: scroll;
 }
 .navbar {
     color: #fff;
