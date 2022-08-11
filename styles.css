@@ -42,7 +42,7 @@ h1 {
 @media screen and (max-width: 700px) {
     .navbar {
         position: absolute;
-        width:0;
+        width: 0;
         top: 0;
         bottom: 0;
         right: 0;
@@ -74,7 +74,6 @@ h1 {
 }
 @media screen and (min-width: 700px) {
     .navbar {
-        position: absolute;
         left: 0;
         right: 0;
         height: 2em;
@@ -90,6 +89,9 @@ h1 {
     }
     .menu_obj {
         display: none;
+    }
+    .site-body {
+        padding-top: 3em;
     }
 }
 .site_body {
