@@ -69,10 +69,12 @@ h1 {
         padding-top: 3em;
         padding-right: 0;
         padding-bottom: 0;
+        text-align: start;
     }
     .navbar_obj {
         display: block; 
         font-size: 0;
+        margin-right: 0;
         padding-bottom: 0.5em;
         padding-left: 0.3em;
     }
