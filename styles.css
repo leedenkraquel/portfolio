@@ -63,8 +63,10 @@ h1 {
         width: 0;
         top: 0;
         bottom: 0;
+        left: auto;
         right: 0;
         padding-top: 3em;
+        padding-right: 0;
         padding-bottom: 0;
     }
     .navbar_obj {
@@ -78,6 +80,9 @@ h1 {
     }
     .navbar:focus-within .navbar_obj {
         font-size: 20;
+    }
+    .menu_obj {
+        display: block;
     }
     .menu_obj:focus {
         right: 6.9em;
