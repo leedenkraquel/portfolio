@@ -45,8 +45,8 @@
 .project_page {
     display: grid;
     justify-items: center;
-    row-gap: 1em;
-    padding-bottom: 1em;
+    row-gap: 2em;
+    padding-bottom: 3em;
     grid-template-columns: auto auto auto auto;  
 }
 @media screen and (max-width: 1200px) {
