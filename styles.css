@@ -90,14 +90,16 @@ h1 {
     .menu_obj {
         display: none;
     }
-    .site-body {
+    .site_body {
         padding-top: 3em;
+        padding-left: 5em;
+        padding-right: 5em;
     }
 }
 .site_body {
     padding-top: 10em;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
     min-height: calc(100% - 20em);
 }
 .footer {
