@@ -1,3 +1,4 @@
 /backup/
 /tests/
+/__pycache__/
 *.pyc
