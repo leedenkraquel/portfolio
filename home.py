@@ -26,6 +26,7 @@ def create_home_page ():
 
     home_page += '''
         </div>
+        <a class="see_more" href="projects/">See more...</a>
         <div class="hr"></div>
         <h2>Essays</h2>
         <div class="essay_section">
@@ -34,6 +35,7 @@ def create_home_page ():
     home_page += ''.join(create_essay_cards("", essay_files)[:3])
 
     home_page += '''</div>
+        <a class="see_more" href="essays/">See more...</a>
         <div class="hr"></div>
     '''
     return home_page
