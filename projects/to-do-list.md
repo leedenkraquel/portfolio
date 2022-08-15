@@ -4,7 +4,7 @@ type: project
 image: images/react-logo.png
 title: To Do List Web Application
 permalink: projects/To Do List
-date: 2022-04-17
+date: 2022-04
 labels:
   - Javascript
   - AWS

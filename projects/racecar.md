@@ -4,7 +4,7 @@ type: project
 image: images/racecar-cover.png
 title: OpenAI Self Driving Racecar
 permalink: projects/Racecar
-date: 2022-04-12
+date: 2022-04
 labels:
   - Python
   - Numpy
