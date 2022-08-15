@@ -98,17 +98,17 @@ def parse_md(filedir):
 		if line[0] == "<":
 			output.content += line
 		elif line[0] == ">":
-			output.content += "<p style='text-indent: 40px'>" + line + "</p>"
+			output.content += "<p style='margin-left: 40px'>" + line[2:] + "</p>"
 		elif line[0] == "#":
 			if line[1] == "#":
 				if line[2] == "#":
-					output.content += "<h3>" + line + "</h3>"
+					output.content += "<h3>" + line[2:] + "</h3>"
 				else:
-					output.content += "<h2>" + line + "</h2>"
+					output.content += "<h2>" + line[2:] + "</h2>"
 			else:
-				output.content += "<h1>" + line + "</h1"
+				output.content += "<h1>" + line[2:] + "</h1>"
 		elif line[0] == "\n":
-			output.content += "<br />"
+			output.content += ""
 		else:
 			output.content += "<p>" + line + "</p>"
 	

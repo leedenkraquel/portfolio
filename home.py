@@ -13,7 +13,7 @@ def create_home_page ():
     project_files = listdir("projects/")
 
     home_page = '''
-        <h1 class="centered">Leeden Raquel</h1>
+        <h1 class="centered" style="margin-top: 4em">Leeden Raquel</h1>
         <p class="centered about_body">Software Developer</p>
         <div class="hr"></div>
         <h2>Projects</h2>
