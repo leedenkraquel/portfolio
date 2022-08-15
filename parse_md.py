@@ -4,15 +4,17 @@
 # Description: Represents the header and content in a markdown file
 ###
 class Markdown():
-	layout = ""
-	type = ""
-	image = ""
-	title = ""
-	permalink = ""
-	date = ""
-	labels = []
-	summary = ""
-	content = ""
+	def __init__(self):
+		self.layout = ""
+		self.type = ""
+		self.image = ""
+		self.title = ""
+		self.permalink = ""
+		self.date = ""
+		self.labels = []
+		self.summary = ""
+		self.content = ""
+
 	def __str__(self):
 		output = "---\n"
 		output += "layout: " + self.layout + "\n"

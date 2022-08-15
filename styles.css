@@ -52,7 +52,7 @@ body {
     padding-top: 3em;
     padding-left: 5em;
     padding-right: 5em;
-    min-height: calc(100% - 15em);
+    min-height: calc(100% - 11em);
 }
 @media screen and (max-width: 700px) {
     .navbar {
@@ -95,7 +95,7 @@ body {
         transition: 1s;
     }
     .site_body {
-        padding-top: 10em;
+        padding-top: 5em;
         padding-left: 1em;
         padding-right: 1em;
     }

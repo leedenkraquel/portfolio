@@ -27,15 +27,16 @@ def create_project_cards (directory, project_files):
             project_card += '<p class="title">' + project_obj.get_title() + '</p>'
             project_card += '<p class="date">' + project_obj.get_date() + '</p>'
             project_card += '<img class="cover_image" src="' + '../' * directory.count("/") + project_obj.get_image() + '" />'
-            project_card += '<p class="summary">' + project_obj.get_summary() + '</p>'
-            project_card += '</div></a>'
+            project_card += '<div class="project_card_overlay"><p class="summary">' + project_obj.get_summary() + '</p>'
+            project_card += '<p class="label">' + '</p><p class="label">'.join(project_obj.get_labels()) + '</p>'
+            project_card += '</div></div></a>'
             project_cards.append((project_obj.get_date(), project_card))
             create_about_project_page('projects/' + project[:-3] + ".html", project_obj)
     
-    project_cards = sorted(project_cards ,reverse = True)
+    project_cards = sorted(project_cards, reverse = True)
     return list(list(zip(*project_cards))[1])
 
 def create_about_project_page (directory, project_obj):
     about_project_body = '<h1>' + project_obj.get_title() + '</h1>'
     about_project_body += project_obj.to_html()
-    create_page(directory, about_project_body, ["projects/about-project.css"])
+    create_page(directory, about_project_body, ["about-project.css"])

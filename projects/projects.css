@@ -20,11 +20,10 @@
     bottom: 0;
     left: 0;
     width: 300px;
-    z-index: 1;
+    z-index: 0;
 }
-.summary {
+.project_card_overlay {
     background-color: #333;
-    color: #fff;
     text-align: center;
     margin: 0;
     padding-top: 10em;
@@ -37,9 +36,22 @@
     right: 0;
     opacity: 0%;
     transition: 0.5s;
-    z-index: 2;
 }
-.summary:hover {
+.summary {
+    color: #fff;
+}
+.label {
+    display: inline-block;
+    background-color: #999;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.project_card_overlay:hover {
     opacity: 100%;
 }
 .project_page {
