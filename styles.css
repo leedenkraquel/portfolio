@@ -135,3 +135,52 @@ body {
     border-bottom: 2px solid #555;
     opacity: 0.1;
 }
+
+.ui:active {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    background-color: #ddd;
+}
+.fluid {
+    width: 100%;
+}
+.rounded {
+    border-radius: 15px;
+}
+.circular {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.left {
+    float: left;
+    margin-right: 1em;
+}
+.right {
+    float: right;
+    margin-left: 1em;
+}
+.tiny {
+    width: 5%;
+}
+.small {
+    width: 15%;
+}
+.medium {
+    width: 30%;
+}
+.large {
+    width: 75%;
+}
+.avatar {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+.centered {
+    display: block;
+    margin: auto;
+}
