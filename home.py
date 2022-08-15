@@ -1,6 +1,7 @@
 from os import listdir
 from parse_md import parse_md
 from projects.projects import create_project_cards
+from essays.essays import create_essay_cards
 
 ###
 # Name: page.py
@@ -11,6 +12,7 @@ from projects.projects import create_project_cards
 
 def create_home_page ():
     project_files = listdir("projects/")
+    essay_files = listdir("essays/")
 
     home_page = '''
         <h1 class="centered" style="margin-top: 4em">Leeden Raquel</h1>
@@ -26,6 +28,12 @@ def create_home_page ():
         </div>
         <div class="hr"></div>
         <h2>Essays</h2>
+        <div class="essay_section">
+    '''
+
+    home_page += ''.join(create_essay_cards("", essay_files)[:3])
+
+    home_page += '''</div>
         <div class="hr"></div>
     '''
     return home_page

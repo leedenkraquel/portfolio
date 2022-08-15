@@ -51,8 +51,18 @@ h2 {
     padding-bottom: 1em;
     grid-template-columns: auto auto auto auto;  
 }
+.essay_section {
+    display: grid;
+    justify-items: center;
+    row-gap: 1em;
+    padding-bottom: 1em;
+    grid-template-columns: auto auto auto auto;  
+}
 @media screen and (max-width: 1200px) {
     .project_section {
+        grid-template-columns: auto auto auto;
+    }
+    .essay_section {
         grid-template-columns: auto auto auto;
     }
 }
@@ -60,9 +70,15 @@ h2 {
     .project_section {
         grid-template-columns: auto auto;
     }
+    .essay_section {
+        grid-template-columns: auto auto;
+    }
 }
 @media screen and (max-width: 600px) {
     .project_section {
+        grid-template-columns: auto;
+    }
+    .essay_section {
         grid-template-columns: auto;
     }
 }
