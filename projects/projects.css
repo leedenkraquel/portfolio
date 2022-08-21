@@ -1,6 +1,6 @@
 .title {
     color: #fff;
-    font-size: 20;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: start;
     margin-top: 0;
@@ -17,13 +17,14 @@
 }
 .cover_image {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 300px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    width: 298px;
     z-index: 0;
 }
 .project_card_overlay {
-    background-color: #333;
+    background-color: #222;
     text-align: center;
     margin: 0;
     padding-top: 10em;
@@ -42,7 +43,7 @@
 }
 .label {
     display: inline-block;
-    background-color: #999;
+    background-color: teal;
     color: #fff;
     border-radius: 4px;
     margin-top: 0;
@@ -77,16 +78,17 @@
     }
 }
 .project_card {
-    background-color: #333;
+    background-color: #111;
     padding-top: 1em;
     padding-bottom: 1em;
     height: 380px;
     width: 300px;
     position: relative;
+    transition: 0.5s;
 }
 .project_card:hover {
     transform: translate(2px, -2px);
-    box-shadow: -2px 2px 10px #222
+    box-shadow: -2px 2px 10px #333
 }
 .project_link {
     text-decoration: none;
